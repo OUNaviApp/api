@@ -1,0 +1,19 @@
+What we accomplished
+Daniel: Created AWS infrastructure to allow for application to be deployed
+Akshobh: Created designs for the web app and specified what data is to show up on each page
+Alex: Created a global style sheet in order to be used and converted to react
+
+What roadblocks occured
+Daniel: Allowing all of the team members to access the account required me to setup AWS SSO to provide them with account access. This was an unforseen challenge that I had to overcome.
+Akshobh: Coming up with the different form ideas was a challenge. Thinking about exactly what data needed to be submitted with each form was also more difficult than expected.
+Alex: Trying to make the elements scale properly when the webpage changes sizes is difficult and required more work than expected.
+
+What we plan to do for the next sprint
+Daniel: Work on the API and create a deployment pipeline for the different apps
+Akshobh: Create designs for the mobile app and continue refining the designs we have
+Alex: Migrate the raw CSS over to React components
+
+General discussion
+- Helped get VSCode installed in the proper location (to allow `code .` to work in the terminal)
+- Created the minutes folder for these minutes in the API repo
+- Made VSCode the default file opener for files
