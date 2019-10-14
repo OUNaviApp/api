@@ -17,3 +17,5 @@ General discussion
 - Helped get VSCode installed in the proper location (to allow `code .` to work in the terminal)
 - Created the minutes folder for these minutes in the API repo
 - Made VSCode the default file opener for files
+
+
