@@ -1,16 +1,19 @@
 What we have accomplished
 Akshobh: Created designs for the web and mobile apps
 Daniel Abdelsamed: Created the typescript base for the API and made the DynamoDB table in AWS
+Alex Ford: Completed webapp templating via CSS and React's styled components library
 
 
 What roadblocks occured
 Akshobh: Deciding which prototyping tool to use from here on since the tool being used is soon set to expire
 Daniel Abdelsamed: Getting typescript to work with ESLint was a challenge as support is relatively new
+Alex Ford: Orienting objects properly, given that some of my CSS/HTML from the original template is non-functional in React, was an issue; particularly in the header
 
 
 What we plan to do for the next sprint
 Akshobh: Complete the web and mobile app template and final data fields in order to migrate to live workspace
 Daniel Abdelsamed: Complete the API so that we can focus on the frontend
+Alex Ford: Create pin designs via Illustrator to add to assets for mobile; begin work on the live mobile template testing
 
 
 General discussion
