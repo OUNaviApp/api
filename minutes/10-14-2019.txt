@@ -1,15 +1,18 @@
 What we have accomplished
 Akshobh: Created designs for the web and mobile apps
+Daniel Abdelsamed: Created the typescript base for the API and made the DynamoDB table in AWS
 
 
 What roadblocks occured
 Akshobh: Deciding which prototyping tool to use from here on since the tool being used is soon set to expire
+Daniel Abdelsamed: Getting typescript to work with ESLint was a challenge as support is relatively new
 
 
 What we plan to do for the next sprint
 Akshobh: Complete the web and mobile app template and final data fields in order to migrate to live workspace
+Daniel Abdelsamed: Complete the API so that we can focus on the frontend
 
 
 General discussion
-//Feel free to add anything you can think of
+The project is coming along nicely.
 
