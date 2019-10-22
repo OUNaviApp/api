@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: naviapp-api
+  namespace: naviapp
   labels:
     app: naviapp-api
 spec:
@@ -17,7 +18,10 @@ spec:
       imagePullSecrets:
         - name: pipeline-docker-registry
       containers:
-        - name: naviapp-api
+        - envFrom:
+            - secretRef:
+                name: naviapp-api-secrets
+          name: naviapp-api
           image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
           ports:
             - containerPort: 8481
