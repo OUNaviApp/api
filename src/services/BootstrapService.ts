@@ -1,9 +1,9 @@
-import { Service, Inject } from 'typedi';
+import { Container, Service, Inject } from 'typedi';
 import { Express } from 'express';
 import express from 'express';
 import * as config from '../config';
 import { LoggerService } from './LoggerService';
-import { useExpressServer } from 'routing-controllers';
+import { useExpressServer, useContainer as useRoutingContainer } from 'routing-controllers';
 import { MarkerController } from '../routes/MarkerController';
 
 @Service()
@@ -14,6 +14,7 @@ export class BootstrapService {
   public app!: Express;
 
   async bootstrap(): Promise<void> {
+    useRoutingContainer(Container);
     this.logger.info('Starting bootstrapping process', {
       service: 'Bootstrap',
     });
@@ -36,6 +37,9 @@ export class BootstrapService {
     const app = express();
     useExpressServer(app, {
       controllers: [MarkerController],
+      validation: {
+        skipMissingProperties: true,
+      },
     });
     return new Promise(res => {
       app.listen(8481, () => {
