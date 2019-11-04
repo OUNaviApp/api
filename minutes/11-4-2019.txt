@@ -1,0 +1,17 @@
+11/4/2019
+
+General notes:
+1) Worked on the intensive implementation of the app
+2) Prepared for the final presentation
+3) Created a tool chain
+
+Roadblocks:
+1) Webapp had issues with routing
+2) Webapp css became large
+3) Sketch lisense expired
+4) Backend code needed cleaning
+
+Next Week:
+Alex - Start connecting frontend to backend
+Akshobh - Help Alex connect frontend to backend
+Daniel - Work on backend and get API spec to Alex and Akshobh
