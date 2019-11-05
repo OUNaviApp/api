@@ -5,6 +5,8 @@ export class Marker {
 
   public geocode!: string;
 
+  public creator!: string;
+
   @IsNumber()
   public longitude!: number;
 
