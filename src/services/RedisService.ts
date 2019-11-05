@@ -6,7 +6,7 @@ export class RedisService {
     if (this._redis) {
       return this._redis;
     }
-    const redis = new Redis(6379, process.env.NODE_ENV === 'production' ? 'redis' : '127.0.0.1');
+    const redis = new Redis(6379, process.env.REDIS_HOST || '127.0.0.1');
     this._redis = redis;
     return redis;
   }
