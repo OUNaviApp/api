@@ -21,4 +21,8 @@ export class Marker {
   @IsString()
   @Length(1, 1000)
   public description!: string;
+
+  @IsString()
+  @Length(1, 300)
+  public type!: string;
 }
