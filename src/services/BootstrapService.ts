@@ -41,6 +41,7 @@ export class BootstrapService {
     const app = express();
     useExpressServer(app, {
       controllers: [MarkerController, AccountController],
+      cors: true,
       authorizationChecker: async (action, roles) => {
         const req = action.request as Request;
 
