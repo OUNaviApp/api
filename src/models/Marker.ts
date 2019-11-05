@@ -23,6 +23,6 @@ export class Marker {
   public description!: string;
 
   @IsString()
-  @Length(1, 300)
+  @Length(1, 30)
   public type!: string;
 }
