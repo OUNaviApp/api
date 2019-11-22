@@ -1,0 +1,19 @@
+What we accomplished
+Daniel: Created markers on the map
+Akshobh: Implement maps in the design
+Alex: Converted the CSS to React
+
+What roadblocks occurred
+Daniel: Installing pods
+Akshobh: Getting the maps to load
+Alex: Getting simulator to run
+
+What we plan to do for the next sprint
+Daniel: Creating text boxes and implementing interactive styles
+Akshobh: Finish styling the designs on the app after the migration
+Alex: Work with Akshobh on the final designs on the app after migration
+
+General discussion
+- Helped get VSCode installed in the proper location (to allow `code .` to work in the terminal)
+- Created the minutes folder for these minutes in the API repo
+- Made VSCode the default file opener for files
