@@ -1,0 +1,19 @@
+What we accomplished
+Daniel: Started the initial migration of Alex's designs
+Akshobh: Completed designs for the app and assisted with the migration
+Alex: Finished the CSS 
+
+What roadblocks occurred
+Daniel: Reading through documentation
+Akshobh: Learning and getting used to AdobeXD
+Alex: Converting CSS to React
+
+What we plan to do for the next sprint
+Daniel: Initial stages of migrating Alex's designs
+Akshobh: Implement Maps in React
+Alex: Finish converting CSS to React
+
+General discussion
+- Helped get VSCode installed in the proper location (to allow `code .` to work in the terminal)
+- Created the minutes folder for these minutes in the API repo
+- Made VSCode the default file opener for files
