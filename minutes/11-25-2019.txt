@@ -1,0 +1,19 @@
+What we accomplished
+Daniel: Created text boxes and implementing interactive styles
+Akshobh: Finish styling the designs on the app after the migration
+Alex: Worked on the final designs on the app after migration
+
+What roadblocks occurred
+Daniel, Akshobh and Alex: 1) Getting React Native installed on everyone's computer
+		     2) Finding libraries for React Native
+
+What we plan for the sprint:
+Daniel: Finalizing the databases
+Akshobh and Alex: Splitting up presentation
+Daniel, Akshobh and Alex: Planning on the demo
+
+
+General discussion
+- Helped get VSCode installed in the proper location (to allow `code .` to work in the terminal)
+- Created the minutes folder for these minutes in the API repo
+- Made VSCode the default file opener for files
