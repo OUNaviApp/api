@@ -4,11 +4,16 @@ import * as AWS from 'aws-sdk';
 import { randomBytes } from 'crypto';
 import geohash from 'ngeohash';
 import { User } from '../models/User';
+import { InjectRedis } from '../decorators/InjectRedis';
+import IORedis from 'ioredis';
 
 @Service()
 export class MarkerService {
   private dynamodb = new AWS.DynamoDB({ region: 'us-east-1' });
   private client = new AWS.DynamoDB.DocumentClient({ region: 'us-east-1' });
+
+  @InjectRedis()
+  private redis!: IORedis.Redis;
 
   async get(geocode: string): Promise<Marker> {
     const hash = this.getHashFromGeocode(geocode);
@@ -30,7 +35,7 @@ export class MarkerService {
     return res.Item as Marker;
   }
 
-  async create(marker: Marker, user: User): Promise<Marker> {
+  async create(marker: Marker): Promise<Marker> {
     // Allocate for the 64 bit int
     const geocode = Buffer.alloc(8);
     // Geocode and write the 48 bit int to the code
@@ -40,12 +45,13 @@ export class MarkerService {
     marker.geocode = geocode.readBigUInt64BE().toString();
     //https://www.ibm.com/support/knowledgecenter/en/SSCJDQ/com.ibm.swg.im.dashdb.analytics.doc/doc/geo_geohashes.html
     marker.hash = this.getHashFromGeocode(marker.geocode);
-    marker.creator = user.id;
+
+    // this.redis.;
+
     await this.dynamodb
       .putItem({
         Item: {
           hash: { N: marker.hash },
-          creator: { S: user.id },
           geocode: { N: marker.geocode },
           longitude: { N: marker.longitude.toString() },
           latitude: { N: marker.latitude.toString() },

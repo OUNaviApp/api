@@ -7,7 +7,8 @@ stages:
       - publishImageConfig:
           dockerfilePath: ./Dockerfile
           buildContext: .
-          tag: naviapp-api:${CICD_EXECUTION_SEQUENCE}
+          pushRemote: true
+          tag: 313462697269.dkr.ecr.us-east-1.amazonaws.com/naviapp-api:${CICD_EXECUTION_SEQUENCE}
   - name: Deploy
     steps:
       - applyYamlConfig:
