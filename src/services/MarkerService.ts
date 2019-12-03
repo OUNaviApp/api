@@ -17,6 +17,7 @@ export class MarkerService {
 
   // async getRegion(latitude: number, longitude: number, radius: number): Promise<Marker[]> {
   //   const ids = await (this.redis as any)
+
   // }
 
   async get(geocode: string): Promise<Marker> {
