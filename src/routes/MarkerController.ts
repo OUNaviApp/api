@@ -15,7 +15,7 @@ export class MarkerController {
   @Post('/')
   @Authorized()
   public async create(@Body() marker: Marker, @CurrentUser({ required: true }) user: User): Promise<Marker> {
-    return this.markerService.create(marker, user);
+    return this.markerService.create(marker);
   }
 
   @Delete('/')
