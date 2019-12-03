@@ -15,6 +15,10 @@ export class MarkerService {
   @InjectRedis()
   private redis!: IORedis.Redis;
 
+  // async getRegion(latitude: number, longitude: number, radius: number): Promise<Marker[]> {
+  //   const ids = await (this.redis as any)
+  // }
+
   async get(geocode: string): Promise<Marker> {
     const hash = this.getHashFromGeocode(geocode);
 
