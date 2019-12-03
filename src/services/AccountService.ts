@@ -112,7 +112,7 @@ export class AccountService {
     const code = await this.redis.get(id + '_create_request_code');
     const jsonUser = await this.redis.get(id + '_create_request_user');
     if (!code || !jsonUser) {
-      throw new Error('This number never requested a code, or the code expired. Please return and try again.');
+      throw new Error('This number never requested a code, or the code expired. Please go back and try again.');
     }
 
     const user = JSON.parse(jsonUser);
